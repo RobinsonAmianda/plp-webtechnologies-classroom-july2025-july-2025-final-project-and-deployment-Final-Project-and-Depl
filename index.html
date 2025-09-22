@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Learning Studio — Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Learning<span>Studio</span></a>
+
+      <button id="mobile-nav-toggle" class="mobile-nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+        ☰
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Smart, practical online learning</h1>
+          <p>Build skills with bite-sized interactive courses taught by industry experts. Learn at your pace — from anywhere.</p>
+          <a class="btn" href="#courses">Explore courses</a>
+        </div>
+
+        <!-- Slider (interactive) -->
+        <div class="slider-wrap" aria-label="Featured courses slider">
+          <div class="slider" id="slider">
+            <div class="slide" data-index="0">
+              <img src="js.jpg" alt="Intro to JavaScript course image">
+              <div class="slide-caption">
+                <h3>Intro to JavaScript</h3>
+                <p>Learn JS fundamentals and DOM manipulation.</p>
+              </div>
+            </div>
+
+            <div class="slide" data-index="1">
+              <img src="Mastering-SQL-databases.jpg" alt="UX Basics course image">
+              <div class="slide-caption">
+                <h3>UX Basics</h3>
+                <p>Design delightful user experiences with practical exercises.</p>
+              </div>
+            </div>
+
+            <div class="slide" data-index="2">
+              <img src="mern.jpg" alt="Startups 101 course image">
+              <div class="slide-caption">
+                <h3>Startups 101</h3>
+                <p>From idea to pitch: building your first startup.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- slider controls -->
+          <div class="slider-controls">
+            <button id="prevBtn" class="slider-btn" aria-label="Previous slide">‹</button>
+            <div id="indicators" class="indicators" role="tablist" aria-label="Slide indicators"></div>
+            <button id="nextBtn" class="slider-btn" aria-label="Next slide">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COURSES / FEATURES -->
+    <section id="courses" class="container features">
+      <h2>Popular Courses</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Intro to JavaScript</h3>
+          <p>Beginner-friendly course covering core JavaScript concepts and DOM APIs.</p>
+          <a href="contact.html" class="btn btn-outline">Enroll</a>
+        </article>
+
+        <article class="card">
+          <h3>UX Basics</h3>
+          <p>Foundations of user research, wireframing, and prototyping.</p>
+          <a href="contact.html" class="btn btn-outline">Enroll</a>
+        </article>
+
+        <article class="card">
+          <h3>Startups 101</h3>
+          <p>Validate ideas, build a pitch deck, and understand MVP strategy.</p>
+          <a href="contact.html" class="btn btn-outline">Enroll</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> LearningStudio — All rights reserved.</p>
+      <nav aria-label="Footer navigation">
+        <a href="about.html">About</a> • <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
